@@ -25,5 +25,9 @@ if(isset($_POST['lg_username'])){
 	$message = 6;
 }
 
+// bu method(header) bir sayfayı başka bir sayfayla
+//yer değiştirerek çalıştırır.
+//Bu kodu kullanırsak, ilgili sayfaya doğrudan
+//erişmiş oluruz.
 header('Location: ../../index.php?main=login&mesaj='.$message);
 ?>
